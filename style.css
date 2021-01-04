@@ -2369,7 +2369,7 @@ img{
     right: 3%;
   }
   .slide-article {
-    padding-left: 60px;
+    padding-left: 0px;
     padding-right: 0;
     padding-top: 15px;
   }
@@ -2450,7 +2450,7 @@ img{
     display: none;
   }
   .slide-article {
-    padding-top: 10px;
+    padding-top: 0px;
   }
   .title-area {
     padding: 0 30px;
