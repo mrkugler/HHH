@@ -108,6 +108,7 @@ $(document).ready(function(){
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#counter">Photos</a><li>
             <li><a href="#testimonials">Testimonials</a></li>
             <!--<li><a href="portfolio.html">Photos</a></li>
             <li><a href="portfolio.html">Events</a></li>-->
@@ -262,7 +263,7 @@ $(document).ready(function(){
                 <div class="our-skill">
                             
                   <div class="our-skill-content">
-                  <center><img src="assets/images/puzzlepieces.png" width="100%"></center>
+                  <center><img src="assets/images/puzzlepieces.png" width="75%"></center>
                   <!--&nbsp;
                   <center><img src="assets/images/5817.jpg" height="250"></center>-->
                   </div>                  
@@ -291,6 +292,126 @@ $(document).ready(function(){
     </div>
   </section>
   <!-- end about -->
+     <!-- Start counter -->
+  <section id="counter">
+    <div class="counter-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="counter-area">
+              <div class="row">
+               <section class="swiper-container"> 
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" style="background-image:url(assets/images/demo.jpg)">
+      <img src="assets/images/demo.jpg" class="entity-img" />
+      <div class="content">
+        <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7"></p>
+        
+        <span class="caption" data-swiper-parallax="-20%"></span>
+      </div>
+    </div>
+    
+    
+    
+    <div class="swiper-slide" style="background-image:url(assets/images/IMG_0859.JPG)">
+     
+      <img src="assets/images/IMG_0859.JPG" class="entity-img" />
+      
+      <div class="content">
+        <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7"></p>
+        <span class="caption" data-swiper-parallax="-20%"></span>
+      </div>
+    </div>
+    
+    
+    <div class="swiper-slide" style="background-image:url(assets/images/radio.jpg)">
+      <img src="assets/images/radio.jpg" class="entity-img" />
+      <div class="content">
+        <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7"></p>
+        <span class="caption" data-swiper-parallax="-20%"></span>
+      </div>
+    </div>
+    <div class="swiper-slide" style="background-image:url(assets/images/display.png)">
+      <img src="assets/images/display.png" class="entity-img" />
+      <div class="content">
+        <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7"></p>
+        <span class="caption" data-swiper-parallax="-20%"></span>
+      </div>
+    </div>
+    <div class="swiper-slide" style="background-image:url(assets/images/5812.jpg)">
+      <img src="assets/images/5812.jpg" class="entity-img" />
+      <div class="content">
+        <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7"</p>
+        <span class="caption" data-swiper-parallax="-20%"></span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev swiper-button-white"></div>
+  <div class="swiper-button-next swiper-button-white"></div>
+</section>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+ <script>
+    
+    // Params
+var sliderSelector = '.swiper-container',
+    options = {
+      init: false,
+      loop: true,
+      speed:800,
+      slidesPerView: 2, // or 'auto'
+      // spaceBetween: 10,
+      centeredSlides : true,
+      effect: 'coverflow', // 'cube', 'fade', 'coverflow',
+      coverflowEffect: {
+        rotate: 50, // Slide rotate in degrees
+        stretch: 0, // Stretch space between slides (in px)
+        depth: 100, // Depth offset in px (slides translate in Z axis)
+        modifier: 1, // Effect multipler
+        slideShadows : true, // Enables slides shadows
+      },
+      grabCursor: true,
+      parallax: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        1023: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        }
+      },
+      // Events
+      on: {
+        imagesReady: function(){
+          this.el.classList.remove('loading');
+        }
+      }
+    };
+var mySwiper = new Swiper(sliderSelector, options);
+
+// Initialize slider
+mySwiper.init();
+    
+    
+    </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End counter -->
 
   <!-- Start about  -->
   <section id="about2">
@@ -318,9 +439,9 @@ $(document).ready(function(){
               </div>
               <div class="col-md-6">
               <div class="our-skill-content">
-                  <center><img src="assets/images/Beth2.JPG" height="350">
+                  <center>
                   
-                  <img src="assets/images/tv.jpg" height="350"></center>
+                  <img src="assets/images/tv.jpg" width="75%"></center>
                   </div>
                   
                 </div>
@@ -357,16 +478,16 @@ $(document).ready(function(){
                 <div class="single-slider">
                   
                   <div class="testimonial-content">
-                    <p>"This was a very informative program. I'm thankful to Beth for coming to speak to my group!"</p>
-                    <h7>Mike Kugler<span><p><i>University of Pittsburgh</i></p></span></h7>
+                    <p>"I had no idea what was out there"</p>
+                    <h7><span><p><i>Parent Attendee</i></p></span></h7>
                   </div>
                 </div>
                 <!-- Start single slider -->
                 <div class="single-slider">
                   
                   <div class="testimonial-content">
-                    <p>"Wow! Thanks Beth!"</p>
-                    <h7>Michael Kugler<span><p><i>University of Pittsburgh</i></p></span></h7>
+                    <p>"It's so scary what these kids are exposed to"</p>
+                    <h7><span><p><i>Parent Attendee</i></p></span></h7>
                   </div>
                 </div>
                 <!-- Start single slider -->
@@ -375,8 +496,8 @@ $(document).ready(function(){
                   <div class="single-slider">
                   
                   <div class="testimonial-content">
-                    <p>"I would highly recommend this program to others"</p>
-                    <h7>M.R. Kugler<span><p><i>University of Pittsburgh</i></p></span></h7>
+                    <p>"Eye opening! Thank you for working with our kids"</p>
+                    <h7><span><p><i>Parent Attendee</i></p></span></h7>
                   </div>
                 </div>
               </div>
