@@ -45,7 +45,7 @@ body,html{
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif !important;}
 	font-size: 16px;
 	overflow-x: hidden !important;
 	color: #838282;
@@ -957,7 +957,7 @@ img{
 	color: #ffffff;
 	display: inline;
 	float: left;
-	padding: 90px 0;
+	padding: 40px 0;
 	width: 100%;
 }
 
@@ -2271,14 +2271,13 @@ img{
 #contact{
   display: inline;
   float: left;
-  padding: 70px 0;
+  padding: 40px 0;
   width: 100%;
 }
 
 .cotact-area{
   display: inline;
   float: left;
-  margin-top: 50px;
   width: 100%;
 }
 
